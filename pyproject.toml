@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trace-the-leak-security"
+version = "0.1.0"
+description = "Authorized security assessment toolkit for labs, CTFs, and owned systems."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "TraceTheLeakSecurity" }]
+dependencies = []
+
+[project.scripts]
+traceleak = "trace_the_leak_security.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

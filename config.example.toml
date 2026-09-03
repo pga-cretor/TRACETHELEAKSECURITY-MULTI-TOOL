@@ -1,0 +1,15 @@
+# Copia in ~/.config/trace-the-leak-security/config.toml
+[runtime]
+safe = true
+timeout = 3.0
+max_requests = 20
+rate_limit = 1.0
+max_body_bytes = 1048576
+
+[scope]
+require_confirmation = true
+allowlist = ["127.0.0.1", "localhost", "::1"]
+
+[lab]
+enabled = false
+targets = ["127.0.0.1", "localhost", "::1"]
